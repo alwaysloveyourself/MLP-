@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+
+# venv
+.venv/
+venv/
+
+# environment
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# model/data
+*.pth
+*.pt
+*.bin
+
+# mac
+.DS_Store
