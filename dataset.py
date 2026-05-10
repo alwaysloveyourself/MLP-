@@ -42,7 +42,7 @@ x_train, x_test, y_train, y_test = train_test_split(
 
 #学習用データセットの学習/検証の分割、同じく7 : 3くらい
 
-x_train, x_valid, x_train, y_valid = train_test_split(
+x_train, x_valid, y_train, y_valid = train_test_split(
     x_train,y_train,test_size=0.3, random_state = 42
 )
 
