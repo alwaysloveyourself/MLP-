@@ -14,12 +14,12 @@ class MLP(nn.Module):
         super(MLP,self).__init__()
         self.fc1 = nn.Linear(30,40)
         self.fc2 = nn.Linear(40,35)
-        self.fc3 = nn.Linear()
+        self.fc3 = nn.Linear(35,2)
 
     def forward(self,x):
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
-        return F.relu(self.fc3(x))
+        return self.fc3(x)
     
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
